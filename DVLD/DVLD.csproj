@@ -82,5 +82,15 @@
       <Name>DVLD_Buisness</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Applications\" />
+    <Folder Include="Drivers\" />
+    <Folder Include="Licenses\" />
+    <Folder Include="Login\" />
+    <Folder Include="People\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Tests\" />
+    <Folder Include="User\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
