@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DVLD_DataAcsess\DVLD_DataAcsess.csproj">
+      <Project>{10fea274-3866-43e5-9d5d-02736b560616}</Project>
+      <Name>DVLD_DataAcsess</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
