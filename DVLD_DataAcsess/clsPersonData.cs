@@ -6,7 +6,7 @@ using System.Net;
 
 namespace DVLD_DataAcsess
 {
-    internal class Class1
+    public class clsPersonData
     {
         public static bool GetPersonInfoByID( int PersonID,ref string FirstName,ref string SecondName,
            ref string ThirdName, ref string LastName,ref string NationalNo,ref DateTime DateOfBirth,ref short Gendor,ref string Address ,ref string Phone,ref string Email,
