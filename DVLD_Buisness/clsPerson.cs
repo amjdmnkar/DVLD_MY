@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DVLD_Buisness
 {
-    internal class clsPerson
+    public class clsPerson
     {
         public enum enMode { AddNew=0,Update =1};
         public enMode Mode = enMode.AddNew;
