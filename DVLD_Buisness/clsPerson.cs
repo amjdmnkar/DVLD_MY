@@ -130,6 +130,29 @@ namespace DVLD_Buisness
             else
                 return null;
         }
+        public static clsPerson Find(string NationalNo)
+        {
+            int PersonID = -1;
+            string FirstName = "", SecondName = "", ThirdName = "", LastName = "", Email = "", Phone = "", Address = "", ImagePath = "";
+            DateTime DateOfBirth = DateTime.Now;
+            int NationalityCountryID = -1;
+            short Gendor = 0;
+
+            bool IsFound = clsPersonData.GetPersonInfoByNationalNo
+                                (
+                                     NationalNo, ref PersonID, ref FirstName, ref SecondName,
+                                    ref ThirdName, ref LastName,  ref DateOfBirth,
+                                    ref Gendor, ref Address, ref Phone, ref Email,
+                                    ref NationalityCountryID, ref ImagePath
+                                );
+
+            if (IsFound)
+                //we return new object of that person with the right data
+                return new clsPerson(PersonID, FirstName, SecondName, ThirdName, LastName,
+                          NationalNo, DateOfBirth, Gendor, Address, Phone, Email, NationalityCountryID, ImagePath);
+            else
+                return null;
+        }
 
 
 
