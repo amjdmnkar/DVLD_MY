@@ -184,5 +184,10 @@ namespace DVLD.Controls
 
 
         }
+
+        private void gbFilters_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

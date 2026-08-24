@@ -33,7 +33,7 @@ namespace DVLD.Controls
 
         public ctrlPersonCard()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
         public void LoadPersonInfo(int PersonID)
@@ -124,6 +124,9 @@ namespace DVLD.Controls
             LoadPersonInfo(_PersonID);
         }
 
-        
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
