@@ -189,5 +189,9 @@ namespace DVLD.Controls
         {
 
         }
+        private void ctrlPersonCard1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

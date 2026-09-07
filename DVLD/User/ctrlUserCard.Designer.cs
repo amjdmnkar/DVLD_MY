@@ -35,6 +35,7 @@
             this.lblUserID = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.ctrlPersonCard1 = new DVLD.Controls.ctrlPersonCard();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -119,17 +120,28 @@
             this.label1.TabIndex = 130;
             this.label1.Text = "Username:";
             // 
+            // ctrlPersonCard1
+            // 
+            this.ctrlPersonCard1.BackColor = System.Drawing.Color.White;
+            this.ctrlPersonCard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ctrlPersonCard1.Location = new System.Drawing.Point(4, 8);
+            this.ctrlPersonCard1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ctrlPersonCard1.Name = "ctrlPersonCard1";
+            this.ctrlPersonCard1.Size = new System.Drawing.Size(839, 300);
+            this.ctrlPersonCard1.TabIndex = 2;
+            this.ctrlPersonCard1.Load += new System.EventHandler(this.ctrlPersonCard1_Load);
+            // 
             // ctrlUserCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.ctrlPersonCard1);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ctrlUserCard";
             this.Size = new System.Drawing.Size(839, 404);
-            this.Load += new System.EventHandler(this.ctrlUserCard_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
