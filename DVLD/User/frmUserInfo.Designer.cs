@@ -36,7 +36,6 @@
             // 
             this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnClose.Image = global::DVLD.Properties.Resources.Close_32;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClose.Location = new System.Drawing.Point(720, 413);
             this.btnClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -56,11 +55,12 @@
             this.ctrlUserCard1.Name = "ctrlUserCard1";
             this.ctrlUserCard1.Size = new System.Drawing.Size(839, 399);
             this.ctrlUserCard1.TabIndex = 0;
+            this.ctrlUserCard1.Load += new System.EventHandler(this.ctrlUserCard1_Load);
             // 
             // frmUserInfo
             // 
             this.AcceptButton = this.btnClose;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.btnClose;

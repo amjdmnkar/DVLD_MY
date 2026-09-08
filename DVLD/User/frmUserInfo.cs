@@ -30,5 +30,10 @@ namespace DVLD.User
             ctrlUserCard1.LoadUserInfo(_UserID);
 
         }
+
+        private void ctrlUserCard1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
