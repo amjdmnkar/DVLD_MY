@@ -1,7 +1,9 @@
-﻿using System;
+﻿using DVLD_DataAcsess;
+using System;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
+using System.Net;
 
 namespace DVLD_DataAccess
 {
@@ -61,7 +63,7 @@ namespace DVLD_DataAccess
 
             return isFound;
         }
-
+        
 
         public static bool GetUserInfoByPersonID(int PersonID, ref int UserID, ref string UserName,
           ref string Password,ref bool IsActive)
@@ -221,7 +223,7 @@ namespace DVLD_DataAccess
         public static bool UpdateUser(int UserID, int PersonID, string UserName,
              string Password, bool IsActive)
         {
-
+            
             int rowsAffected = 0;
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
