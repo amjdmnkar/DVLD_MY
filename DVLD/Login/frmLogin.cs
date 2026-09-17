@@ -82,10 +82,5 @@ namespace DVLD.Login
                 chkRememberMe.Checked = false;
 
         }
-
-        private void frmLogin_Load_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
