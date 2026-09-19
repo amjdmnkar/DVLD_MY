@@ -84,6 +84,7 @@
             this.splitContainer1.Panel2.Controls.Add(this.pictureBox8);
             this.splitContainer1.Panel2.Controls.Add(this.pictureBox3);
             this.splitContainer1.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
             this.splitContainer1.Size = new System.Drawing.Size(901, 523);
             this.splitContainer1.SplitterDistance = 417;
             this.splitContainer1.SplitterWidth = 6;
@@ -97,7 +98,7 @@
             this.label4.Location = new System.Drawing.Point(147, 406);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 20);
+            this.label4.Size = new System.Drawing.Size(122, 25);
             this.label4.TabIndex = 136;
             this.label4.Text = "Version 1.0";
             // 
@@ -122,7 +123,7 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "(DVLD) System";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-              // 
+            // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Stencil", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -134,7 +135,7 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Driving && Vehicle License Department";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-             // 
+            // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Stencil", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -168,7 +169,7 @@
             this.label7.Location = new System.Drawing.Point(97, 82);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(240, 25);
+            this.label7.Size = new System.Drawing.Size(294, 31);
             this.label7.TabIndex = 135;
             this.label7.Text = "Login to your account";
             // 
@@ -179,7 +180,7 @@
             this.chkRememberMe.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkRememberMe.Location = new System.Drawing.Point(166, 236);
             this.chkRememberMe.Name = "chkRememberMe";
-            this.chkRememberMe.Size = new System.Drawing.Size(137, 24);
+            this.chkRememberMe.Size = new System.Drawing.Size(167, 29);
             this.chkRememberMe.TabIndex = 134;
             this.chkRememberMe.Text = "Remember Me.";
             this.chkRememberMe.UseVisualStyleBackColor = true;
@@ -204,7 +205,7 @@
             this.txtUserName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtUserName.MaxLength = 50;
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(230, 26);
+            this.txtUserName.Size = new System.Drawing.Size(230, 30);
             this.txtUserName.TabIndex = 1;
             // 
             // label5
@@ -214,7 +215,7 @@
             this.label5.Location = new System.Drawing.Point(17, 166);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 20);
+            this.label5.Size = new System.Drawing.Size(117, 25);
             this.label5.TabIndex = 130;
             this.label5.Text = "Username:";
             // 
@@ -225,7 +226,7 @@
             this.label6.Location = new System.Drawing.Point(17, 202);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 20);
+            this.label6.Size = new System.Drawing.Size(113, 25);
             this.label6.TabIndex = 131;
             this.label6.Text = "Password:";
             // 
@@ -236,7 +237,7 @@
             this.txtPassword.MaxLength = 50;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(230, 26);
+            this.txtPassword.Size = new System.Drawing.Size(230, 30);
             this.txtPassword.TabIndex = 2;
             // 
             // pictureBox8
@@ -262,7 +263,7 @@
             // frmLogin
             // 
             this.AcceptButton = this.btnLogin;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.CancelButton = this.btnClose;
