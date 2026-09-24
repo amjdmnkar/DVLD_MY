@@ -14,7 +14,8 @@ namespace DVLD_Buisness
 
         public enMode Mode = enMode.AddNew;
         public enum enApplicationStatus { New=1, Cancelled=2,Completed=3};
-
+         
+        public clsPerson PersonInfo {  get; set; }
         public int ApplicationID { set; get; }
         public int ApplicantPersonID { set; get; }
         public string ApplicantFullName
@@ -75,6 +76,7 @@ namespace DVLD_Buisness
         {
             this.ApplicationID = ApplicationID;
             this.ApplicantPersonID = ApplicantPersonID;
+            this.PersonInfo = clsPerson.Find(ApplicantPersonID);
             this.ApplicationDate = ApplicationDate;
             this.ApplicationTypeID = ApplicationTypeID;
             this.ApplicationTypeInfo = clsApplicationType.Find(ApplicationTypeID);
